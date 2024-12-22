@@ -1,0 +1,72 @@
+/* General card styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card header styles */
+  .card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .card-body p {
+    margin: 8px 0;
+  }
+  
+  .card-body strong {
+    font-weight: bold;
+  }
+  
+  /* Specific styles for each card */
+  .patient-card .card-header {
+    background-color: #28a745; /* Green for Patient */
+  }
+  
+  .physician-card .card-header {
+    background-color: #007bff; /* Blue for Physician */
+  }
+  
+  .nurse-card .card-header {
+    background-color: #ffc107; /* Yellow for Nurse */
+  }
+  
+  /* Optional styling for card title and details */
+  h5 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
